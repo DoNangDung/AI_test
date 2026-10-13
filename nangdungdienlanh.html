@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điện Lạnh Năng Dũng - Thiết Kế Bản Vẽ Kỹ Thuật HVAC</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000000;
+            background-color: #ffffff;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            border-bottom: 2px solid #0056b3;
+            padding: 15px 5%;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .brand h1 {
+            color: #0056b3;
+            font-size: 24px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .brand p {
+            margin: 2px 0 0 0;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        nav a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #f4f8fb;
+            border: 1px solid #d0e1f9;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .hero h1 {
+            color: #0056b3;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin: 15px 0 25px 0;
+        }
+
+        .btn-contact {
+            background-color: #0056b3;
+            color: #ffffff !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .section-title {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .stat-item {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .stat-item:not(:last-child) {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .stat-number {
+            color: #0056b3;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #d0e1f9;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .price-text {
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+        .reviews-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .review-card {
+            flex: 1;
+            background-color: #f4f8fb;
+            border: 1px solid #d0e1f9;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .review-author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .contact-box {
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+
+        .contact-box h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #555555;
+            margin-top: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <h1>Điện Lạnh Năng Dũng</h1>
+                <p>Chuyên Thiết Kế Hệ Thống HVAC Chuyên Nghiệp</p>
+            </div>
+            <nav>
+                <a href="#trang-chu">Trang Chủ</a>
+                <a href="#gioi-thieu">Giới Thiệu</a>
+                <a href="#dich-vu">Dịch Vụ</a>
+                <a href="#du-an">Dự Án</a>
+                <a href="#bang-gia">Bảng Giá</a>
+                <a href="#danh-gia">Đánh Giá</a>
+                <a href="#lien-he">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Trang Chủ / Banner -->
+        <section id="trang-chu" class="hero">
+            <h1>GIẢI PHÁP THIẾT KẾ HỆ THỐNG HVAC CHUYÊN NGHIỆP & TỐI ƯU</h1>
+            <p>Tư vấn, lập bản vẽ kỹ thuật hệ thống điều hòa không khí và thông gió chuẩn tiêu chuẩn cho mọi công trình.</p>
+            <a href="tel:0378430375" class="btn-contact">LIÊN HỆ TƯ VẤN NGAY: 0378 430 375</a>
+        </section>
+
+        <!-- Giới Thiệu -->
+        <section id="gioi-thieu">
+            <h2 class="section-title">1. GIỚI THIỆU VỀ ĐIỆN LẠNH NĂNG DŨNG</h2>
+            <p><strong>Điện Lạnh Năng Dũng</strong> là đơn vị uy tín hàng đầu trong lĩnh vực <strong>thiết kế bản vẽ kỹ thuật hệ thống HVAC</strong> (Heating, Ventilation, and Air Conditioning - Hệ thống sưởi, thông gió và điều hòa không khí) tại khu vực miền Bắc.</p>
+            <p>Với kinh nghiệm thực chiến qua hàng loạt dự án đa dạng, chúng tôi cam kết mang đến những giải pháp thiết kế tối ưu công năng, tiết kiệm chi phí đầu tư, đảm bảo độ bền vận hành và tuân thủ nghiêm ngặt các tiêu chuẩn kỹ thuật hiện hành.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">Gần 100+</div>
+                    <div>Dự án lớn nhỏ hoàn thành khắp miền Bắc</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div>Khách hàng tin tưởng và hài lòng tuyệt đối</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Chuẩn Kỹ Thuật</div>
+                    <div>Tối ưu chi phí & An toàn vận hành</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dịch Vụ / Thiết Kế -->
+        <section id="dich-vu">
+            <h2 class="section-title">2. DỊCH VỤ THIẾT KẾ TRỌNG TÂM</h2>
+            <p>Chúng tôi cung cấp các gói dịch vụ tư vấn và lập bản vẽ kỹ thuật chuyên sâu bao gồm:</p>
+            <ul>
+                <li><strong>Thiết kế hệ thống điều hòa không khí (HVAC):</strong> Điều hòa trung tâm VRV/VRF, Chiller, điều hòa cục bộ cho biệt thự, văn phòng, tòa nhà chung cư, trung tâm thương mại.</li>
+                <li><strong>Thiết kế hệ thống thông gió & cấp gió tươi:</strong> Hệ thống thông gió tầng hầm, tăng áp cầu thang, hút khói hành lang, thông gió nhà xưởng.</li>
+                <li><strong>Lập bản vẽ thi công (Shopdrawing):</strong> Bản vẽ chi tiết lắp đặt, bóc tách khối lượng vật tư chính xác giúp chủ đầu tư kiểm soát chi phí tối đa.</li>
+                <li><strong>Tư vấn cải tạo & tối ưu hóa hệ thống điện lạnh:</strong> Đưa ra giải pháp khắc phục sự cố, nâng cấp hiệu suất năng lượng cho công trình cũ.</li>
+            </ul>
+        </section>
+
+        <!-- Dự Án Tiêu Biểu -->
+        <section id="du-an">
+            <h2 class="section-title">3. DỰ ÁN TIÊU BIỂU</h2>
+            <p>Điện Lạnh Năng Dũng tự hào đã thực hiện thành công <strong>gần 100 dự án lớn nhỏ khắp miền Bắc</strong>, đa dạng chủng loại công trình:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại Công Trình</th>
+                        <th>Hạng Mục Thiết Kế HVAC</th>
+                        <th style="text-align: center;">Đánh Giá Hoàn Thành</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tòa nhà Văn phòng & Chung cư cao tầng</td>
+                        <td>Hệ thống VRV/VRF, hút khói hành lang, tăng áp cầu thang</td>
+                        <td style="text-align: center;">Hoàn thành đúng tiến độ</td>
+                    </tr>
+                    <tr>
+                        <td>Biệt thự, Nhà phố cao cấp</td>
+                        <td>Điều hòa giấu trần nối ống gió, cấp khí tươi lọc bụi mịn</td>
+                        <td style="text-align: center;">Đạt thẩm mỹ & Đẳng cấp</td>
+                    </tr>
+                    <tr>
+                        <td>Nhà xưởng & Kho công nghiệp</td>
+                        <td>Hệ thống thông gió làm mát xưởng, điều hòa không khí diện tích lớn</td>
+                        <td style="text-align: center;">Tối ưu chi phí vận hành</td>
+                    </tr>
+                    <tr>
+                        <td>Nhà hàng, Showroom, Chuỗi cửa hàng</td>
+                        <td>Thông gió bếp, điều hòa không khí trung tâm</td>
+                        <td style="text-align: center;">Vận hành ổn định</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bảng Giá -->
+        <section id="bang-gia">
+            <h2 class="section-title">4. BẢNG GIÁ THIẾT KẾ HỆ THỐNG HVAC</h2>
+            <p>Chúng tôi cung cấp phương án tính giá linh hoạt và công khai nhằm hỗ trợ tốt nhất cho từng quy mô công trình:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gói Dịch Vụ Thiết Kế</th>
+                        <th>Đơn Giá Niêm Yết</th>
+                        <th>Ghi Chú Chi Tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Thiết kế theo diện tích sàn</strong></td>
+                        <td class="price-text">25.000 VNĐ / m²</td>
+                        <td>Áp dụng cho các công trình tính theo tổng diện tích sàn sử dụng.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bộ bản vẽ công trình ≤ 5 tầng</strong></td>
+                        <td class="price-text">150.000.000 VNĐ / Bộ</td>
+                        <td>Trọn gói hồ sơ bản vẽ kỹ thuật đầy đủ cho công trình từ 5 tầng trở xuống.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Công trình quy mô > 5 tầng</strong></td>
+                        <td class="price-text">20.000.000 VNĐ / Tầng</td>
+                        <td>Áp dụng cho các tầng tiếp theo của công trình trên 5 tầng.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Đánh Giá Khách Hàng -->
+        <section id="danh-gia">
+            <h2 class="section-title">5. ĐÁNH GIÁ TỪ KHÁCH HÀNG</h2>
+            <p>Sự tin tưởng và hài lòng của khách hàng là minh chứng rõ nhất cho chất lượng dịch vụ của Điện Lạnh Năng Dũng:</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p style="font-style: italic; margin-top: 0;">"Bản vẽ thiết kế hệ thống điều hòa VRV cho tòa nhà văn phòng của bên tôi cực kỳ chi tiết, đội ngũ thi công nhìn vào là triển khai ngay không vướng mắc. Rất hài lòng về độ chuyên nghiệp của Năng Dũng."</p>
+                    <div class="review-author">- Anh Minh (Chủ đầu tư tòa nhà văn phòng tại Cầu Giấy, Hà Nội)</div>
+                </div>
+                <div class="review-card">
+                    <p style="font-style: italic; margin-top: 0;">"Làm việc đúng tiến độ, tư vấn giải pháp thông gió và điều hòa rất tối ưu chi phí vật tư cho biệt thự của gia đình. Đánh giá 5 sao cho chất lượng dịch vụ."</p>
+                    <div class="review-author">- Chị Thu Hằng (Chủ biệt thự tại Hải Phòng)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liên Hệ -->
+        <section id="lien-he" class="contact-box">
+            <h2>6. THÔNG TIN LIÊN HỆ & TƯ VẤN</h2>
+            <p>Quý khách hàng và đối tác có nhu cầu tư vấn, thiết kế bản vẽ kỹ thuật hệ thống HVAC xin vui lòng liên hệ:</p>
+            <p><strong>Thương hiệu:</strong> ĐIỆN LẠNH NĂNG DŨNG</p>
+            <p><strong>Địa chỉ:</strong> 432 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+            <p><strong>Điện thoại / Zalo:</strong> 0378 430 375</p>
+            <p><strong>Email:</strong> dungdonang54@gmail.com</p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/DienlanhNangDung" target="_blank">facebook.com/DienlanhNangDung</a></p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Điện Lạnh Năng Dũng. All Rights Reserved. Chuyên nghiệp - Tối ưu - Tin cậy.</p>
+    </footer>
+
+</body>
+</html>
